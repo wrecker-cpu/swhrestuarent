@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;400;700;900&family=Andada+Pro:wght@400;700&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#bg-container{
+ background-image: url("/rectange.png");
+ background-color: #cccccc;
+ background-size: cover;
+ background-position: center; 
+}
+
+
+   
+@media only screen and (max-width: 767px) {
+    .hero-container {
+      background-image: url("https://s3-alpha-sig.figma.com/img/3b8a/5349/ed3eff7949ff751a8434231b33ea4894?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b~N4NsYrZRxOsK9H5DBCfnO0xmgFk13CxL~~p0XdDgGN23wf-oLdWsHaaErGWHjh0~yzj-KVHuNEKYe3y7QWh~-pCQsp9Kxjyv0-K82FC0-54synBlO0ptAGE9pJrLLxSfwKE2cRlPpymcZfc9NieZ5toW9X0Hgi7GTBmlPWCwaiRDAoTfGqgqfEypgHOuJDlCHNKhP~rkHHibyx8p6K7AgmpEyD5IlD4vGaBaRZPDm~JpArNOJqI6Lo-gad5cZ8ySwel11qqHXYf12zJgjqir8BYao~cF6qdQyeEo5wKAbZiDhBIPX9wKe9o3rR~I53xT~8UC-RABvXp7Y2nHBkwg__");
+      background-color: #cccccc;
+      background-size: cover;
+      background-position: center;
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 100px;
+      transition: backdrop-filter 0.3s ease; /* Smooth transition for the effect */
+    }
+  
+    .hero-container:hover {
+      backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: 'Monster';
+      src: url('/monster.ttf') format('truetype');
+    }
+  }
+
+
+
+
+  .text-outline {
+    color: #FFFFFF; 
+    text-shadow: 
+      1.1px 1.1px 0 #FFB300, 
+      -1.1px -1.1px 0 #FFB300, 
+      1.1px -1.1px 0 #FFB300, 
+      -1.1px 1.1px 0 #FFB300, 
+      2.2px 2.2px 0 #FFB300, 
+      -2.2px -2.2px 0 #FFB300, 
+      2.2px -2.2px 0 #FFB300, 
+      -2.2px 2.2px 0 #FFB300,
+      3.3px 3.3px 0 #FFB300, 
+      -3.3px -3.3px 0 #FFB300, 
+      3.3px -3.3px 0 #FFB300, 
+      -3.3px 3.3px 0 #FFB300,
+      4.4px 4.4px 0 #FFB300, 
+      -4.4px -4.4px 0 #FFB300, 
+      4.4px -4.4px 0 #FFB300, 
+      -4.4px 4.4px 0 #FFB300,
+      5.5px 5.5px 0 #FFB300, 
+      -5.5px -5.5px 0 #FFB300, 
+      5.5px -5.5px 0 #FFB300, 
+      -5.5px 5.5px 0 #FFB300;
+    
+  }
+
+  body {
+    transition-property: opacity, background-color, transform, filter,scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+  
+
+  .page-transition {
+    opacity: 0;
+    background-color: white;
+    transform: translateY(30px);
+    scale: (0.05); 
+    filter: blur(12px); 
+  }
+  
