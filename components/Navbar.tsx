@@ -70,7 +70,7 @@ export default function Navbar() {
           <ul className='flex ml-12 items-end gap-0 md:h-[92px]'>
             {NavbarData.links.map((item) => (
               <li key={item.id} className='h-full'>
-                <AnimatedPage className='w-[6rem] font-montserrat h-full flex justify-center items-end  pb-5 hover:bg-[#BDD2B6] text-center font-thin cursor-pointer' href={`${item.id===1?"/":"menu"}`}>{item.name}</AnimatedPage>
+                <AnimatedPage className='w-[6rem] font-montserrat h-full flex justify-center items-end  pb-5 hover:bg-[#BDD2B6] text-center font-thin cursor-pointer' href={item.href}>{item.name}</AnimatedPage>
               </li>
             ))}
           </ul>

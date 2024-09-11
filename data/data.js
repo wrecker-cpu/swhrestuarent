@@ -1,9 +1,9 @@
 export const NavbarData={
     links: [
         {id:1,name: 'Home', href: '/'},
-        {id:2, name: 'About', href: '/about'},
-        {id:3, name: 'Contact', href: '/contact'},
-        {id:4, name:'Menu',href:"/Menu"}
+        {id:2, name: 'About', href: '/'},
+        {id:3, name: 'Contact', href: '/contactus'},
+        {id:4, name:'Menu',href:"/menu"}
     ]
 }
 
